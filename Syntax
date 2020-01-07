@@ -1,0 +1,34 @@
+# Switch-Case-Syntax
+Switch Case Syntax and how to use it
+//first of all let’s start up by making our main function
+void main() {
+  // remember switch case statements is only applicable
+  //for //int and string
+  // first we going to assign a variable, String and we will give it a value
+  String grade = 'A';
+  // here comes the use of switch
+  switch (grade) {
+    case 'A':
+    //once it matches the grade a print
+    // so in case if the grade is A print excellent grade of a
+      print('Excellent Grade of A');
+      break;
+  //otherwise break
+  //lets make some other cases
+    case 'B':
+      print('very good');
+      break;
+    case 'C':
+      print('good but you need to work hard');
+      break;
+
+  //but like that we may have a problem later on, when  user uses an invalid input like “123” or “abc”
+  //so we may need to change this ‘default’ case and add a new failure case
+  //and don’t forget to remove the ‘default’ we have used up there
+    case 'F':
+      print('you have failed');
+      break;
+    default:
+      print('Invalid Input');
+  }
+}
